@@ -1,0 +1,11 @@
+Model Information:
+* title:	Alien Queen Embryo
+* source:	https://sketchfab.com/3d-models/alien-queen-embryo-e6c3cda9d35745d0b257480dfc318c49
+* author:	pahko (https://sketchfab.com/pahko)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Alien Queen Embryo" (https://sketchfab.com/3d-models/alien-queen-embryo-e6c3cda9d35745d0b257480dfc318c49) by pahko (https://sketchfab.com/pahko) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
