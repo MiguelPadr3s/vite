@@ -1,9 +1,9 @@
 import './App.css'
 import { Canvas, useLoader, useThree } from '@react-three/fiber';
-import { OrbitControls, useTexture } from '@react-three/drei';
+import { OrbitControls, useTexture, Html } from '@react-three/drei';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { Suspense, useRef } from 'react';
-import { Color } from 'three';
+import { Color} from 'three';
 
 
 {/* carga el modelo */}
@@ -14,6 +14,41 @@ function Model() {
   object={result.scene} 
   position={[0, 2.8, 1]} 
   scale={[1, 1, 1]}/>;
+}
+function Model2() {
+  const result = useLoader(GLTFLoader, '/gabinete/scene.gltf');
+  result.scene.rotation.y = Math.PI;
+
+  return (
+    <>
+      <primitive
+        object={result.scene}
+        position={[5, -0.99, -5]}
+        scale={[0.02, 0.02, 0.02]}
+      />
+
+      {/* Anotacion 1 */}
+<Html position={[5.01, -0.8, -5]} center>
+  <div className="annotation" onClick={() => window.location.href = '/puerta'}>
+    Unifilares
+  </div>
+</Html>
+
+{/* Anotacion 2 */}
+<Html position={[5.02, -0.7, -5.1]} center>
+  <div className="annotation" onClick={() => window.location.href = '/panel'}>
+    Acometida Sur
+  </div>
+</Html>
+
+{/* Anotacion 3 */}
+<Html position={[5.00, -0.6, -4.9]} center>
+  <div className="annotation" onClick={() => window.location.href = '/estado'}>
+    Acometida Norte
+  </div>
+</Html>
+    </>
+  );
 }
 
 function UpdateSceneBackground() {
@@ -48,6 +83,7 @@ function App() {
         <Suspense fallback={null}>
           <UpdateSceneBackground/>
           <Model/>
+          <Model2/>
         </Suspense>
       </Canvas>
     </div>
