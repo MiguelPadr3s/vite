@@ -26,7 +26,7 @@ function Model2() {
         position={[5, -0.99, -5]}
         scale={[0.02, 0.02, 0.02]}
       />
-
+ 
       {/* Anotacion 1 */}
 <Html position={[5.01, -0.8, -5]} center>
   <div className="annotation" onClick={() => window.location.href = '/puerta'}>
