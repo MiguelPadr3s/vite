@@ -51,3 +51,15 @@
   cursor: pointer !important;
   z-index: 1000; /* Ensure it's clickable and not blocked */
 }
+
+.annotation-K {
+  width: 35px;
+  background: rgba(229, 233, 7, 0.3) !important;
+  color: black !important;
+  padding: 4px 10px !important;
+  border-radius: 9px !important;
+  font-size: 12px !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  z-index: 1000; /* Ensure it's clickable and not blocked */
+}
